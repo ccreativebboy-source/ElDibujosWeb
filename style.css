@@ -1,0 +1,208 @@
+h1,h2,label {
+    font-family: 'Arial', sans-serif;
+    font-size: 25px;
+    margin: 1%;
+}
+
+p {
+    font-family: 'Arial', sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+img {
+    margin: 2%;
+    box-shadow: 0 0 10px #0000006e;
+}
+
+#email,#nombre {
+    font-size: 24px;
+    display: inline-block;
+    width: 350px;
+    padding: 10px;
+    border: 1px solid;
+    margin: 10px;
+}
+
+.tipomensaje {
+    display: flex;
+    flex-direction: column;
+}
+
+#mensaje {
+    font-size: 24px;
+    display: inline-block;
+    width: 950px;
+    height: 210px;
+    padding: 10px;
+    border: 1px solid;
+    margin: 14px;
+}
+
+nav, img {
+margin: 0;
+text-align: center;
+}
+
+.Catshow-Video {
+    width: 40%;
+    height: 40%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0000006e;
+}
+
+header {
+    background-color: #3a8fc9;
+    box-shadow: 0 0 10px #0000006e;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-linksabajo {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #3a8fc9; 
+    height: 60px;
+    width: 100%;
+}
+
+#Enviarmensaje {
+    background-color: #ff98ae00;
+    padding: 10px;
+    display: flex;
+    }
+
+form {
+    width: 1000px;
+    background-color: #3a8fc9;
+    box-shadow: 0 0 10px #0000006e;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    background-color: #47daff00;
+}
+
+a:hover {
+    background-color: #fff;
+    color: brown;
+}
+
+.enviar {
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+table  {
+    border: none;
+    width: 100%;
+    font-family: arial, sans-serif;
+    background-color: aliceblue;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4caf7d;
+    color: white;
+}
+
+button:hover {
+    background-color: #fff;
+    color: brown;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/* efecto hover */
+.nav-links a:hover {
+    background-color: #fff;
+    color: brown;
+}
+
+nav {
+    background-color: #fffd9800;
+    padding: 10px;
+}
+
+main {
+    background-color: #f698ff00;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.video-section{
+    background-color: #ff98ae00;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .textoinfo {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer {
+    background-color: #98ffb700;
+    padding: 00px;
+    text-align: center;
+}
+
+body {
+    background-image: url('https://static.wikia.nocookie.net/backrooms-freewriting/images/9/92/Level_3_%E2%80%9CSkybox%E2%80%9D.png/revision/latest?cb=20241029120420');
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
