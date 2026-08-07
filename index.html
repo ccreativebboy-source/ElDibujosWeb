@@ -7,22 +7,42 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
-<body>
+<body class="index">
     <header>
         <h1>Hola! Bienvenido a <strong>El Dibujos Web </strong> ( •̀ ω •́ )y</h1>
 
-        <div class="nav-links">
-            <a href="index.html">Inicio <i class="bi bi-house-fill"></i> </a>
-            <a href="quiensoy.html">Quien Soy? <i class="bi bi-person-fill"></i> </a>
-            <a href="historiadeusuario.html">Historia de Usuario de un Artista <i class="bi bi-person-square"></i> </a>
-            <a href="formulario.html">Contactame <i class="bi bi-chat-left-text-fill"></i> </a>
-            <a href="recomendaciones.html">Recomendaciones <i class="bi bi-brush-fill"></i> </a>
-        </div>
+        <nav class="navbar">
+    
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      
+      <!-- Seccion Catshow -->
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" id="dropdown-btn">Catshow</a>
+        <ul class="dropdown-menu" id="dropdown-menu">
+          <li><a id="link" href="Catshow.html">Que es?</a></li>
+          <li><a id="link" href="museo.html">Museo</a></li>
+          <li><a id="link" href="DetrasDeEscena.html">Detras De Escena</a></li>
+        </ul>
+      </li>
+      <!-- Seccion La Prision -->
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" id="dropdown-btn">La Prision</a>
+        <ul class="dropdown-menu" id="dropdown-menu">
+          <li><a href="#diseno">Diseño Web</a></li>
+          <li><a href="#ilustracion">Ilustración</a></li>
+          <li><a href="#animacion">Animación</a></li>
+        </ul>
+      </li>
+      
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
         </header>
-
+<script src="detalles.js" defer></script>
     <nav>
         <p><strong><em>Proposito de la Pagina</em></strong></p>
-        <img src="Archivos/Imagen/FONDO1.png" alt="Fondoinicial" width="1900" height="550"> 
+        <img src="Archivos/Imagen/FONDO1.png" alt="Fondoinicial" width="1920" height="550"> 
         <h1>La Finalidad de esta pagina es mas <strong>Retroalimentarme</strong> que otra cosa, aparte de ser una prueba de mis capacidades con HTML y CSS (y git), espero que les guste quien sea que vea la pagina me tomo mucho esfuerzo hacerla. (●'◡'●)</h1>
     </nav>
 
@@ -35,6 +55,7 @@
     <br><br> la animacion poco a poco la eh dejado de utilizar (al igual que la rotoscopia) porque es tardado, y para videos como el dibujos demoraria mucho y pues youtube no es tan bueno que digamos xd, pero si eh dado algunos experimentos con animacion y de diferentes estilos (Animacion por celda, Rotoscopia, Animacion3D) en cada video para dar algo nuevo cada tiempo para la gente cada que pueda.</h2>
         <Img src="Archivos/Imagen/Ilustracion4.png" alt="Animacion" width="750" height="550">
         </section>
+        
     </main>
 
     <footer>
@@ -50,5 +71,6 @@
         </div>
     </footer>
     
+<audio src="Archivos/Audio/ChopinNocturneOp9No2.mp3" autoplay loop></audio>
 </body>
 </html>
