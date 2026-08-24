@@ -1,5 +1,5 @@
-const dropdownBtn = document.getElementById('dropdown-btn');
-const dropdownMenu = document.getElementById('dropdown-menu');
+const dropdownBtn = document.getElementsByClassName('dropdown-btn');
+const dropdownMenu = document.getElementsByClassName('dropdown-menu');
 
 // Abre y cierra el submenú al hacer clic
 dropdownBtn.addEventListener('click', (e) => {
