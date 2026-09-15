@@ -68,3 +68,76 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+//Catshow
+document.addEventListener('DOMContentLoaded', () => {
+    // -----------------------------------------------------------
+    // 1. SCROLL HORIZONTAL CON LA RUEDA DEL MOUSE
+    // -----------------------------------------------------------
+    const horizontalBody = document.querySelector('body.horizontal-layout');
+
+    if (horizontalBody) {
+        horizontalBody.addEventListener('wheel', (e) => {
+            // Solo activa el scroll horizontal si estamos en pantalla ancha
+            if (window.innerWidth > 768) {
+                e.preventDefault();
+                horizontalBody.scrollLeft += e.deltaY;
+            }
+        }, { passive: false });
+    }
+
+    // -----------------------------------------------------------
+    // 2. DESPLEGABLES Y MENÚ MÓVIL
+    // -----------------------------------------------------------
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    dropdowns.forEach(dropdown => {
+        const toggleBtn = dropdown.querySelector('.dropdown-toggle');
+        const menu = dropdown.querySelector('.dropdown-menu');
+
+        toggleBtn?.addEventListener('click', (e) => {
+            e.preventDefault();
+            dropdowns.forEach(other => {
+                if (other !== dropdown) other.querySelector('.dropdown-menu')?.classList.remove('show');
+            });
+            menu?.classList.toggle('show');
+        });
+    });
+
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    }
+
+    window.addEventListener('click', (e) => {
+        if (!e.target.closest('.dropdown')) {
+            document.querySelectorAll('.dropdown-menu').forEach(m => m.classList.remove('show'));
+        }
+    });
+
+    // -----------------------------------------------------------
+    // 3. REPRODUCCIÓN AUTOMÁTICA DE AUDIO EN PRIMER CLIC
+    // -----------------------------------------------------------
+    const audio = document.getElementById('bg-audio');
+    if (audio) {
+        audio.volume = 0.5;
+        const playPromise = audio.play();
+
+        if (playPromise !== undefined) {
+            playPromise.catch(() => {
+                const startAudio = () => {
+                    audio.play();
+                    document.removeEventListener('click', startAudio);
+                    document.removeEventListener('touchstart', startAudio);
+                    document.removeEventListener('keydown', startAudio);
+                };
+                document.addEventListener('click', startAudio);
+                document.addEventListener('touchstart', startAudio);
+                document.addEventListener('keydown', startAudio);
+            });
+        }
+    }
+});

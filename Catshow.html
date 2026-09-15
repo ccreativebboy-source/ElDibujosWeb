@@ -8,55 +8,67 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="icon" href="Archivos/Imagen/Logo01.gif" type="image/png">
 </head>
-<body class="Catshow1">
-    <script src="detalles.js" defer></script>
-    <header>
-        <h1>Hola! Bienvenido a..</h1>
+<body class="Catshow1 horizontal-layout">
 
-            <nav class="navbar">
-                <ul class="nav-links" id="nav-links">
-                    <li><a href="index.html">Inicio</a></li>
-                
-                        <!-- Seccion Catshow -->
-                        <li class="dropdown">
-                          <a href="#" class="dropdown-toggle" id="dropdown-btn">Contenido</a>
-                          <ul class="dropdown-menu" id="dropdown-menu">
-                            <li><a id="link" href="Catshow.html">CatShow</a></li>
-                            <li><a id="link" href="museo.html">Museo</a></li>
-                            <li><a id="link" href="DetrasDeEscena.html">Detras De Escena</a></li>
-                          </ul>
-                        </li>
+    <header class="main-header horizontal-section">
+        <h1 class="site-title">¡Hola! Bienvenido a...</h1>
 
-                        <li class="dropdown">
-                          <a href="#" class="dropdown-toggle" id="dropdown-btn">Contenido</a>
-                          <ul class="dropdown-menu" id="dropdown-menu">
-                            <li><a id="link" href="Catshow.html">CatShow</a></li>
-                            <li><a id="link" href="museo.html">Museo</a></li>
-                            <li><a id="link" href="DetrasDeEscena.html">Detras De Escena</a></li>
-                          </ul>
-                        </li>
+        <nav class="navbar">
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                <i class="bi bi-list"></i>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+            
+                <!-- Sección 1 -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Contenido <i class="bi bi-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Catshow.html">CatShow</a></li>
+                        <li><a class="dropdown-item" href="museo.html">Museo</a></li>
+                        <li><a class="dropdown-item" href="DetrasDeEscena.html">Detrás De Escena</a></li>
+                    </ul>
+                </li>
 
-                    <li><a href="formulario.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
+                <!-- Sección 2 -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Más Secciones <i class="bi bi-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Catshow.html">CatShow</a></li>
+                        <li><a class="dropdown-item" href="museo.html">Museo</a></li>
+                        <li><a class="dropdown-item" href="DetrasDeEscena.html">Detrás De Escena</a></li>
+                    </ul>
+                </li>
 
-        <main>
-            <img src="Archivos/Imagen/CSLOGO.png" alt="LogoCatshow" width="250" height="50" >
-        </main>
+                <li><a href="formulario.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <footer>
-        <a class="subir" href="index.html">volver al inicio <i class="bi bi-arrow-up"></i> </a>
+    <main class="main-content horizontal-section">
+        <section class="card-section">
+            <img src="Archivos/Imagen/CSLOGO.png" alt="Logo Catshow" class="catshow-logo">
+            <div class="info-card">
+                <h2>Bienvenido a Catshow</h2>
+                <p>Usa la rueda del mouse o desliza hacia la derecha para explorar el contenido horizontalmente.</p>
+            </div>
+        </section>
+    </main>
 
-        <br><br>
-    <div class="nav-linksabajo">
-            <a href="https://www.youtube.com/@El_Dibujos_">Mi Canal <i class="bi bi-youtube"></i> </a>
-            <a href="https://www.youtube.com/@MyCreativeMind_">Mi Canal Secundario <i class="bi bi-youtube"></i> </a>
-            <a href="https://github.com/ccreativebboy-source">Mi Github <i class="bi bi-github"></i> </a>
-            <a href="https://www.instagram.com/dibujos_sin_originalidad_/">Instragram <i class="bi bi-instagram"></i> </a>
-            <a href="https://x.com/DSO_XD">X/Twitter <i class="bi bi-twitter-x"></i> </a>
+    <footer class="horizontal-section">
+        <a class="subir" href="index.html">Volver al Inicio <i class="bi bi-house"></i></a>
+
+        <div class="nav-linksabajo">
+            <a href="https://www.youtube.com/@El_Dibujos_" target="_blank" rel="noopener">Mi Canal <i class="bi bi-youtube"></i></a>
+            <a href="https://www.youtube.com/@MyCreativeMind_" target="_blank" rel="noopener">Canal Secundario <i class="bi bi-youtube"></i></a>
+            <a href="https://github.com/ccreativebboy-source" target="_blank" rel="noopener">GitHub <i class="bi bi-github"></i></a>
+            <a href="https://www.instagram.com/dibujos_sin_originalidad_/" target="_blank" rel="noopener">Instagram <i class="bi bi-instagram"></i></a>
+            <a href="https://x.com/DSO_XD" target="_blank" rel="noopener">Twitter / X <i class="bi bi-twitter-x"></i></a>
         </div>
     </footer>
-    <audio src="Archivos/Audio/The LollipopsIKnow[1974].mp3" autoplay loop></audio>
+
+    <audio id="bg-audio" src="Archivos/Audio/The LollipopsIKnow[1974].mp3" autoplay loop></audio>
+
+    <script src="detalles.js" defer></script>
 </body>
 </html>

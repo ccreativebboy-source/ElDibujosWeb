@@ -309,3 +309,86 @@ footer {
         font-size: 1.2rem;
     }
 }
+
+/*Catshow*/
+/* Layout Horizontal */
+body.horizontal-layout {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+}
+
+/* Ocultar barra de scroll vertical y personalizar la horizontal */
+body.horizontal-layout::-webkit-scrollbar {
+    height: 8px;
+    display: block;
+}
+
+body.horizontal-layout::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+body.horizontal-layout::-webkit-scrollbar-thumb {
+    background: #ecaa73;
+    border-radius: 4px;
+}
+
+/* Secciones dispuestas horizontalmente */
+.horizontal-section {
+    flex: 0 0 auto;
+    min-width: 80vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+    white-space: normal;
+}
+
+.Catshow1 {
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/39aee4d4-5f93-40c6-bcf9-e3a73f5d09e2/d5qcmdq-dcdab77b-7d94-45a6-9b75-9aa7ddd9bed0.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8zOWFlZTRkNC01ZjkzLTQwYzYtYmNmOS1lM2E3M2Y1ZDA5ZTIvZDVxY21kcS1kY2RhYjc3Yi03ZDk0LTQ1YTYtOWI3NS05YWE3ZGRkOWJlZDAuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.W8mRlWzmiVJjdk7DoyNeyYe6UNMxn8DEl5CyfwC2dbE');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.catshow-logo {
+    max-width: 350px;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.7));
+}
+
+.card-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Ajuste responsivo en pantallas pequeñas */
+@media (max-width: 768px) {
+    body.horizontal-layout {
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: auto;
+    }
+
+    .horizontal-section {
+        min-width: 100vw;
+        height: auto;
+        min-height: 100vh;
+    }
+}
