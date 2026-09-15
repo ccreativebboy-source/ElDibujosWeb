@@ -9,60 +9,86 @@
     <link rel="icon" href="Archivos/Imagen/Logo00.gif" type="image/png">
 </head>
 <body class="index">
-    <header>
-        <h1>Hola! Bienvenido a <strong>El Dibujos Web </strong> ( •̀ ω •́ )y</h1>
+    
+    <header class="main-header">
+        <h1 class="site-title">¡Hola! Bienvenido a <strong>El Dibujos Web</strong> ( •̀ ω •́ )y</h1>
 
         <nav class="navbar">
-    
-    <ul class="nav-links" id="nav-links">
-      <li><a href="index.html">Inicio</a></li>
-      
-      <!-- Seccion Catshow -->
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" id="dropdown-btn">Contenido del canal</a>
-        <ul class="dropdown-menu" id="dropdown-menu">
-          <li><a id="link" href="Catshow.html">Catshow</a></li>
-          <li><a id="link" href="museo.html">La Prision</a></li>
-          <li><a id="link" href="DetrasDeEscena.html">El Dibujos Sin Originalidad</a></li>
-        </ul>
-      </li>
-      
-      <li><a href="formulario.html">Contacto</a></li>
-    </ul>
-  </nav>
-        </header>
-<script src="detalles.js" defer></script>
-    <nav>
-        <p><strong><em>Proposito de la Pagina</em></strong></p>
-        <img src="Archivos/Imagen/FONDO1.png" alt="Fondoinicial" width="1920" height="550"> 
-        <h1>La Finalidad de esta pagina es mas <strong>Retroalimentarme</strong> que otra cosa, aparte de ser una prueba de mis capacidades con HTML y CSS (y git), espero que les guste quien sea que vea la pagina me tomo mucho esfuerzo hacerla. (●'◡'●)</h1>
-    </nav>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                <i class="bi bi-list"></i>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                
+                <!-- Primer Dropdown: Contenido del canal -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Contenido del canal <i class="bi bi-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Catshow.html">Catshow</a></li>
+                        <li><a class="dropdown-item" href="museo.html">La Prision</a></li>
+                        <li><a class="dropdown-item" href="DetrasDeEscena.html">El Dibujos Sin Originalidad</a></li>
+                    </ul>
+                </li>
 
-    <main>
-        <p><strong><em>Trabajos de Animacion</em></strong></p>
+                <!-- Segundo Dropdown: Proyectos y Extras -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Proyectos y Extras <i class="bi bi-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Ilustraciones</a></li>
+                        <li><a class="dropdown-item" href="#">Animaciones 3D</a></li>
+                        <li><a class="dropdown-item" href="#">Proyectos TP</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="formulario.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <h2 class="section-subtitle">Propósito de la Página</h2>
+        <div class="banner-container">
+            <img src="Archivos/Imagen/FONDO1.png" alt="Fondo inicial de bienvenida" class="hero-img"> 
+        </div>
+        <p class="description-text">
+            La finalidad de esta página es más <strong>retroalimentarme</strong> que otra cosa, aparte de ser una prueba de mis capacidades con HTML y CSS (y Git). Espero que les guste a quien sea que la vea, me tomó mucho esfuerzo hacerla. (●'◡'●)
+        </p>
+    </section>
+
+    <main class="main-content">
         <section class="video-section">
-        
-        <h2>Mis Proyectos "animados" los inicie desde el 2020, usando el Programa <strong>FlipaClip</strong> y de ahi de poco en poco yendo a probar con otros programas, aparte de los de movil, llegando a los de Computadora <em>(Como Adobe Animate, Pincel 2D, Clip Studio Paint, FireAlpaca, Krita y otras mas que ni me acuerdo)</em>, hasta establecerme con solo Clipstudio paint, que es el Programa de Animacion y Dibujo que mas uso aparte de Krita. <br><br>
-        Con el paso de los años, las animaciones originales las eh dejado de hacer para darle prioridad a otros proyectos (El Dibujos y LaPrision). Lo que si eh hecho mas seguido han sido ilustraciones como por ejemplo en mi estudio de Tecnico Profesional haciendo algunos logos y dibujos para el proyecto, algo aparte de eso eh estado conviviendo con otros artistas y animadores para compartir mi arte con mas gente.
-    <br><br> la animacion poco a poco la eh dejado de utilizar (al igual que la rotoscopia) porque es tardado, y para videos como el dibujos demoraria mucho y pues youtube no es tan bueno que digamos xd, pero si eh dado algunos experimentos con animacion y de diferentes estilos (Animacion por celda, Rotoscopia, Animacion3D) en cada video para dar algo nuevo cada tiempo para la gente cada que pueda.</h2>
-        <Img src="Archivos/Imagen/Ilustracion4.png" alt="Animacion" width="750" height="550">
+            <div class="text-content">
+                <h2 class="section-subtitle">Trabajos de Animación</h2>
+                <p>
+                    Mis proyectos "animados" los inicié desde el 2020, usando el programa <strong>FlipaClip</strong> y de ahí de poco en poco probando con otros programas, aparte de los de móvil, llegando a los de computadora <em>(como Adobe Animate, Pencil2D, Clip Studio Paint, FireAlpaca, Krita y otros más que ni me acuerdo)</em>, hasta establecerme solo con Clip Studio Paint, que es el programa de animación y dibujo que más uso junto con Krita.
+                </p>
+                <p>
+                    Con el paso de los años, las animaciones originales las he dejado de hacer para darle prioridad a otros proyectos (El Dibujos y La Prisión). Lo que sí he hecho más seguido son ilustraciones, como por ejemplo en mi estudio Técnico Profesional haciendo algunos logos y dibujos. Aparte de eso, he estado conviviendo con otros artistas y animadores para compartir mi arte.
+                </p>
+                <p>
+                    La animación poco a poco la he dejado de utilizar (al igual que la rotoscopia) porque toma mucho tiempo. Sin embargo, sigo haciendo experimentos con diferentes estilos (animación tradicional, rotoscopia, 3D) en cada video para aportar algo nuevo a la comunidad.
+                </p>
+            </div>
+            <div class="image-content">
+                <img src="Archivos/Imagen/Ilustracion4.png" alt="Muestra de Animación e Ilustración" class="featured-img">
+            </div>
         </section>
-        
     </main>
 
     <footer>
-        <a class="subir" href="index.html">volver al inicio <i class="bi bi-arrow-up"></i> </a>
+        <a class="subir" href="#top">Volver al inicio <i class="bi bi-arrow-up"></i></a>
 
-        <br><br>
-    <div class="nav-linksabajo">
-            <a href="https://www.youtube.com/@El_Dibujos_">Mi Canal <i class="bi bi-youtube"></i> </a>
-            <a href="https://www.youtube.com/@MyCreativeMind_">Mi Canal Secundario <i class="bi bi-youtube"></i> </a>
-            <a href="https://github.com/ccreativebboy-source">Mi Github <i class="bi bi-github"></i> </a>
-            <a href="https://www.instagram.com/dibujos_sin_originalidad_/">Instragram <i class="bi bi-instagram"></i> </a>
-            <a href="https://x.com/DSO_XD">X/Twitter <i class="bi bi-twitter-x"></i> </a>
+        <div class="nav-linksabajo">
+            <a href="https://www.youtube.com/@El_Dibujos_" target="_blank" rel="noopener">Mi Canal <i class="bi bi-youtube"></i></a>
+            <a href="https://www.youtube.com/@MyCreativeMind_" target="_blank" rel="noopener">Canal Secundario <i class="bi bi-youtube"></i></a>
+            <a href="https://github.com/ccreativebboy-source" target="_blank" rel="noopener">GitHub <i class="bi bi-github"></i></a>
+            <a href="https://www.instagram.com/dibujos_sin_originalidad_/" target="_blank" rel="noopener">Instagram <i class="bi bi-instagram"></i></a>
+            <a href="https://x.com/DSO_XD" target="_blank" rel="noopener">X / Twitter <i class="bi bi-twitter-x"></i></a>
         </div>
     </footer>
     
-<audio src="Archivos/Audio/ChopinNocturneOp9No2.mp3" autoplay loop></audio>
+    <!-- Colocar justo antes del cierre de </body> -->
+    <audio id="bg-audio" src="Archivos/Audio/ChopinNocturneOp9No2.mp3" autoplay loop></audio>
+    <script src="detalles.js" defer></script>
 </body>
 </html>
