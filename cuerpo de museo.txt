@@ -1,0 +1,25 @@
+css:
+html {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: auto;
+}
+
+body {
+    width: max-content;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+js:
+document.addEventListener("wheel", function (event) {
+    // Convertir el scroll vertical en horizontal
+    if (Math.abs(event.deltaY) > Math.abs(event.deltaX)) {
+        event.preventDefault();
+
+        window.scrollBy({
+            left: event.deltaY,
+            behavior: "auto"
+        });
+    }
+}, { passive: false });

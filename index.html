@@ -21,24 +21,26 @@
                 <li><a href="index.html">Inicio</a></li>
                 
                 <!-- Primer Dropdown: Contenido del canal -->
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">Contenido del canal <i class="bi bi-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="Catshow.html">Catshow</a></li>
-                        <li><a class="dropdown-item" href="museo.html">La Prision</a></li>
-                        <li><a class="dropdown-item" href="DetrasDeEscena.html">El Dibujos Sin Originalidad</a></li>
-                    </ul>
-                </li>
+                <select class="enlaces" onchange="window.location.href = this.value;">
+                    <option value="" disabled selected>Catshow</option>
+                    <option value="Catshow.html">Contenido Principal</option>
+                    <option value="museo.html">Museo</option>
+                    <option value="DetrasDeEscena.html">Detras de Escena</option>
+                </select>
 
-                <!-- Segundo Dropdown: Proyectos y Extras -->
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">Proyectos y Extras <i class="bi bi-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Ilustraciones</a></li>
-                        <li><a class="dropdown-item" href="#">Animaciones 3D</a></li>
-                        <li><a class="dropdown-item" href="#">Proyectos TP</a></li>
-                    </ul>
-                </li>
+                <select class="enlaces" onchange="window.location.href = this.value;">
+                    <option value="" disabled selected>La Prision</option>
+                    <option value=".html">Contenido de Streaming</option>
+                    <option value=".html">Serie</option>
+                    <option value=".html">Proyectos Externos</option>
+                </select>
+
+                <select class="enlaces" onchange="window.location.href = this.value;">
+                    <option value="" disabled selected>El Dibujos y Proyectos</option>
+                    <option value=".html">Contenido El Dibujos</option>
+                    <option value=".html">Ilustraciones</option>
+                    <option value=".html">Proyectos TP</option>
+                </select>
                 
                 <li><a href="formulario.html">Contacto</a></li>
             </ul>
@@ -84,6 +86,7 @@
             <a href="https://github.com/ccreativebboy-source" target="_blank" rel="noopener">GitHub <i class="bi bi-github"></i></a>
             <a href="https://www.instagram.com/dibujos_sin_originalidad_/" target="_blank" rel="noopener">Instagram <i class="bi bi-instagram"></i></a>
             <a href="https://x.com/DSO_XD" target="_blank" rel="noopener">X / Twitter <i class="bi bi-twitter-x"></i></a>
+
         </div>
     </footer>
     

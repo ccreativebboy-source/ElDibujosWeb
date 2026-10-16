@@ -84,6 +84,29 @@ body {
     color: #3a1a00;
 }
 
+.enlaces {
+    text-decoration-style: none;
+    border: none;
+    text-align: center;
+    width: auto;
+    height: 30px;
+    background-color: rgba(0, 0, 139, 0);
+    color: white;
+    font-size: 1.1rem;
+}
+
+.enlaces option {
+    text-decoration-style: none;
+    border: none;
+    text-align: center;
+    width: auto;
+    height: 30px;
+    background-color: rgba(105, 34, 16, 0.596);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    border: #000 none;
+}
+
 /* Desplegables (Dropdowns) */
 .dropdown {
     position: relative;
