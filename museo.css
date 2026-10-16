@@ -1,0 +1,15 @@
+html {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: auto;
+}
+
+body {
+    width: max-content;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url('https://t3.ftcdn.net/jpg/02/06/11/90/360_F_206119095_AP0mloOqjp7zqOUQaXb08TrZdvrOJPtK.jpg');
+    background-size:contain;
+    background-position: center;
+    background-attachment:scroll;
+}
